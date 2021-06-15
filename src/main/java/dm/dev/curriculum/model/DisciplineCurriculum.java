@@ -1,23 +1,27 @@
 package dm.dev.curriculum.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import lombok.Data;
 
-@Data
+//@Data
+//@Entity
+//@Table(name = "discipline_curriculums")
 public class DisciplineCurriculum {
 
-    private int disciplineId;
-    private int curriculumId;
-    private int hours;
-    private int auditHours;
-    private int labHours;
-    private int lecHours;
-    private int practiceHours;
-    private int independentWorkHours;
-    private int credits;
-    private boolean hasExam;
-    private boolean hasCredit;
+    private Long disciplineId;
+    private Long curriculumId;
+    private Integer hours;
+    private Integer auditHours;
+    private Integer labHours;
+    private Integer lecHours;
+    private Integer practiceHours;
+    private Integer independentWorkHours;
+    private Integer credits;
+    private Boolean hasExam;
+    private Boolean hasCredit;
     private String individualTaskType;
-    private int semester;
+    private Integer semester;
     private String block;
     private String fileUrl;
     private Discipline discipline;
